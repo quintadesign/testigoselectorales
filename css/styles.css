@@ -2,10 +2,16 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
     font-family: 'Montserrat', 'black', sans-serif;
-    font-size: 18px;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .font-size-genric {
@@ -14,55 +20,66 @@ body {
 }
 
 .font-size-global {
-    font-size: 60px;
+    font-size: 6.5rem;
+}
+
+h1.medium-xs{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1.medium-m{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1.medium-l{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h1.medium-xl{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+h1.medium{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h1.big-xs{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h1.big-m{
+    font-size: 5rem;
+    font-weight: bold;
 }
 
 h1.big{
-font-size: 3em;
+    font-size: 6.5rem;
+    font-weight: bold;
 }
 
-
-.presentation-container {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    overflow-x: hidden;
+/* Estilos para slide generico*/
+.generic {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    padding: 0 6%;
 }
+
 
 /* Estilos para el primer slide con imagen de fondo */
 #slide1 {
-    background-image: url('../img/fondo-slide-1.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el slide */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Estilos para el título */
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40vh;
-}
-
-.title span {
-    font-size: 58px; /* Tamaño de fuente deseado */
-    display: inline-block; /* Hace que los spans se muestren en la misma línea */
-    margin: 0 5px; /* Agrega un pequeño margen entre las palabras */
-}
-
-.title span.pink-text {
-    font-size: 65px;
+    background-image: url('../img/fondo-slide-1.jpg');
 }
 
 .white-text {
@@ -70,26 +87,21 @@ font-size: 3em;
 }
 
 .green-text {
-    color: rgb(166, 194, 0);
+    color: rgb(184, 200, 10);
 }
 
 .pink-text {
-    color: rgb(239, 0, 111);
+    color: rgb(225, 45, 129);
 }
 
 .blue-text {
-    color: rgb(0, 171, 230);
+    color: rgb(59, 183, 230);
 }
 
 .orange-text {
     color: rgb(238, 76, 0);
 }
 
-/* Estilos para el título en el primer slide */
-#slide1 .title {
-    font-weight: bold; /* Aumenta el grosor de las letras */
-    font-size: 48px; /* Tamaño de fuente */
-}
 
 /* Estilos para el contenedor de los botones de navegación */
 .controls {
@@ -118,12 +130,17 @@ font-size: 3em;
     border: none; /* Quita el borde */
 }
 
+button:focus,
+        button:active {
+            outline: none;
+            box-shadow: none;
+        }
+
 .controls i {
-    font-size: 34px; /* Tamaño del icono por defecto */
-    color: white; /* Color del icono */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra más grande y suave */
-    transition: transform 0.2s; /* Agrega una transición suave */
-    margin-right: 15vh; /*Espacio entre los iconos*/
+    font-size: 4vh;
+    color: white;
+    transition: transform 0.2s;
+    margin-right: 15vh;
 }
 
 /* Aumenta el tamaño del icono en hover solo en el icono hovereado */
@@ -142,19 +159,10 @@ font-size: 3em;
 /* Estilos para el primer slide con imagen de fondo */
 #slide2 {
     background-image: url('../img/fondo-slide-2.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el slide */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    align-items: center;
-    position: relative;
+}
+
+.title-slide-2 {
+    margin-top: 5.5rem;
 }
 
 /* Estilos para el logo */
@@ -166,18 +174,6 @@ font-size: 3em;
     right: 20px;
 }
 
-/* Estilos para el texto y el botón */
-#slide2 .content {
-    text-align: center;
-    margin-top: 50vh;
-}
-
-#slide2 h1 {
-    font-weight: bold;
-    font-size: 56px;
-    margin-bottom: 20px;
-}
-
 /* Estilos para el enlace sin subrayado */
 .no-underline {
     text-decoration: none; /* Elimina el subrayado */
@@ -187,87 +183,21 @@ font-size: 3em;
 /* Estilos para el tercer slide */
 #slide3 {
     background-image: url('../img/fondo-slide-3.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el slide */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-    width: 100%;
-    height: 100vh;
-    align-items: center; /* Centra horizontalmente */
-    align-items: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Contenido alineado en la parte inferior */
-}
-
-/* Estilos para el título en azul alineado a la izquierda */
-#slide3 .blue-text {
-    font-weight: bold; /* Letra gruesa */
-    font-size: 90px;
-    margin-bottom: 10px;
-    text-align: left; /* Alinea el título a la izquierda */
-    margin-top: 50vh;
-}
-
-/* Estilos para el párrafo */
-#slide3 p {
-    font-size: 28px;
-    /*margin: 0; /* Elimina el margen predeterminado del párrafo */
-    text-align: left; /* Alinea el párrafo a la izquierda */
 }
 
 /* Estilos para el cuarto slide */
 #slide4 {
-    background-image: url('../img/fondo-slide-4.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff; /* Color de texto */
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Contenido alineado en la parte superior */
+    background-image: url(../img/fondo-slide-4.jpeg);
 }
 
 /* Estilos para el título alineado a la izquierda */
 #slide4 .title-slide4 {
-    font-size: 37px;
-    margin-top: 79px;
+    margin: 5% 0;
+    text-align: center;
 }
-
-/* Estilos para las columnas */
-#slide4 .columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 4vh;
-    align-items: flex-start;
-}
-
-/* Estilos para cada columna */
-#slide4 .column {
-    flex-basis: calc(50% - 20px); /* Ancho del 50% con margen entre columnas */
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
 /* Estilos para la imagen circular y fondo rosado */
 #slide4 .circle-image {
-    border-radius: 50%; /* Forma circular */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*margin-right: 10px; /* Espacio a la derecha de la imagen */
-    flex-shrink: 0; /* Evita que la imagen se encoja con el contenido */
-    z-index: 1; /* Coloca el título detrás de la imagen */
-    position: absolute;
+    text-align: end;
 }
 /* Estilos para hacer la imagen más pequeña */
 .circle-image img {
@@ -275,54 +205,27 @@ font-size: 3em;
     height: auto; /* Mantén la proporción de la imagen */
 }
 
-
-/* Estilos para el contenido de la columna (imagen y texto) */
-
 /* Estilos para el título de la columna */
-#slide4 .column-title {
-    font-weight: bold;
-    color: #fff; /* Color de texto blanco */
-    margin-bottom: 10px;
+.sub-title {
     background: rgb(239, 0, 111);
-    /* Degradado lineal de rosa a transparente, comenzando más a la izquierda */
-    padding: 10px; /* Espacio interno para el fondo */
-    position: absolute; /* Establece la posición absoluta para el título */
-    top: 0; /* Alinea el título en la parte superior del contenedor */
-    left: 13vh; /* Alinea el título a la izquierda del contenedor */
-    right: 2vh; /* Alinea el título a la derecha del contenedor */
-    /*z-index: -1; /* Coloca el título detrás de la imagen */
+    padding-left: 15%;
+    margin-left: -15%;
+    margin-top: 5%;
+    font-size: 1.4rem;
 }
 
-.text-content p.description {
-    position: absolute;
-    margin-top: 9vh;
-    left: 17vh;
-}
-
-/* Estilos para el contenido de la columna (imagen y texto) */
-#slide4 .column-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* El texto se expande para llenar el espacio restante */
-    margin-bottom: -4vh; /* Espacio entre column-content */
-    position: relative; /* Establece la posición relativa para el contenedor */
-    height: 24vh;
+.description {
+    font-size: 1.2rem;
 }
 
 
 /* Estilos para el quinto slide */
 #slide5 {
     background-image: url('../img/fondo-slide-5.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff; /* Color de texto */
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Contenido alineado en la parte superior */
+}
+.title-slide-5 {
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
 }
 
 /* Estilos para el texto y el botón */
@@ -333,12 +236,7 @@ font-size: 3em;
 
 #slide5 h1 {
     font-weight: bold;
-    font-size: 56px;
     margin-bottom: 20px;
-}
-span.text-5 {
-    left: 66vh;
-    position: absolute;
 }
 
 #slide5 .orange-button {
@@ -362,16 +260,6 @@ span.text-5 {
 /* Estilos para el sexto slide */
 #slide6 {
     background-image: url('../img/fondo-slide-6.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff; /* Color de texto */
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Contenido alineado en la parte superior */
 }
 
 /* Estilos para el texto y el botón */
@@ -382,12 +270,6 @@ span.text-5 {
 
 .title-large {
     text-align: left;
-}
-
-#slide6 h1 {
-    font-weight: bold;
-    font-size: 56px;
-    margin-bottom: 20px;
 }
 
 .container {
@@ -403,76 +285,38 @@ span.text-5 {
 /* Estilos para el Slide 7 */
 #slide7 {
     background-image: url('../img/fondo-slide-7.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff; /* Color de texto */
-    padding: 20px; /* Espacio interior */
-    text-align: center; /* Centra el contenido horizontalmente */
 }
 
 .pink-back {
-    background-color:rgb(239, 0, 111);
-    text-align: left;
-    right: 77vh;
-    left: -25px;
-    top: 3px;
-    position: relative;
-    width: 93vh;
-    margin: 55px 0 0 20px;
-}
-
-/* Estilos para el título */
-#slide7 h2 {
-    font-size: 30px;
-    margin: 0; /* Elimina el margen predeterminado */
-}
-
-/* Estilos para el contenedor de columnas */
-.slide-7 .columns {
-    display: flex;
-    justify-content: space-between; /* Espacio entre columnas */
-    margin-top: 20px; /* Espacio superior */
-}
-
-/* Estilos para cada columna */
-.slide-7 .column {
-    flex-basis: calc(33.33% - 10px); /* Ancho del 33.33% con espacio entre columnas */
+    background-color: rgb(239, 0, 111);
+    width: 50%;
+    height: 14vh;
+    margin-top: 3%;
+    padding-top: 2rem;
 }
 
 .orange-bg {
     background: rgb(238, 76, 0); /* Color de fondo naranja */
+    font-size: 1.2rem;
+    padding: 5vh;
 }
 
-/* Estilos para el contenido de cada columna */
-.slide-7 .column-content {
-    padding: 10px; /* Espacio interior */
-    text-align: left; /* left el contenido horizontalmente */
-}
-
-.slide-7 .columns .column .column-content {
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
 /* Estilos para los íconos */
 #slide7 .icon {
     font-size: 24px;
 }
 
-/* Estilos para el texto dentro de las columnas */
-#slide7 .column-content p {
-    margin: 0; /* Elimina el margen predeterminado */
-    margin-left: 20px;
-}
-
 /* Estilos para las imágenes en círculo */
 .circle-image-7 {
-    background-color:rgb(239, 0, 111);
-    width: 100px; /* Ancho de las imágenes en círculo */
-    height: 100px; /* Altura de las imágenes en círculo */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
-    /*margin: 0 auto; /* Centra las imágenes horizontalmente */
-    display: block; /* Elimina el espacio adicional debajo de las imágenes */
+    width: 15vh;
+    margin: 2.8vh;
+}
+
+.description-7 {
+    padding-top: 5vh;
+    padding-left: 6vh;
+    text-align: justify;
+    font-size: 1.3rem;
 }
 
 /* Estilos para el contenedor que envuelve la imagen y el texto */
@@ -486,465 +330,164 @@ span.text-5 {
 /* Estilos para el Slide 8 */
 #slide8 {
     background-image: url('../img/fondo-slide-8.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
 /* Estilos para el fondo rosa */
 .slide8-pink-background {
     background: rgb(239, 0, 111);
-    padding: 10px 0;
-    text-align: left;
-    left: -21px;
+    margin-left: -15%;
+    margin-top: 5%;
+    width: 89%;
     position: relative;
-    width: 116vh;
-    margin-top: 52px;
+    padding: 4vh 0 4vh 26vh;
 }
 
-/* Estilos para el texto en fondo rosa */
-.slide8-white-text {
-    color: #fff;
-    font-size: 30px;
-    margin-left: 80px;
+.slide8-wide-image{
+    width: 100%;
 }
 
-/* Estilos para el contenedor de imagen y texto */
-.slide8-image-text-container {
-    display: flex;
-    align-items: center;
+.slide-circle-image{
+    width: 152%;
 }
 
-/* Estilos para las imágenes en círculo */
-.slide8-circle-image {
-    width: 150px;
-    /* height: 100px; */
-    border-radius: 50%;
-    margin-right: 10px;
-}
 
-/* Estilos para la imagen ancha */
-.slide8-wide-image {
-    width: auto;
-    /* height: 100px; */
-    /* margin-top: 96px; */
-}
-
-/* Estilos para las filas */
-.slide8-row {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-/* Estilos para el texto en las filas */
-.slide8-text {
-    margin: 0;
-}
-
-/* Estilos para el contenedor de columnas */
-.slide8-columns {
-    display: flex;
-    justify-content: space-around; /* Espacio entre las columnas */
-    margin-top: 20px;
-}
 
 
 /* Estilos para el Slide 9 */
 #slide9 {
     background-image: url('../img/fondo-slide-9.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 20px; /* Espacio interior */
-    text-align: center; /* Centra el contenido horizontalmente */
 }
 
 /* Estilos para el fondo rosa */
 .slide9-pink-background {
     background: rgb(239, 0, 111);
-    padding: 3px 40px 2px 60px;
-    text-align: right;
-    width: 100vh;
-    margin-left: -9px;
-    font-weight: bold;
-}
-
-/* Estilos para el texto en fondo rosa */
-.slide9-white-text {
-    color: #fff;
-    font-size: 30px;
-    margin-left: -7px;
-    padding: 0px;
-    text-align: left;
-    left: 19px;
+    margin-left: -15%;
+    margin-top: 5%;
+    width: 89%;
     position: relative;
+    padding: 4vh 0 4vh 26vh;
 }
 
-/* Estilos para las filas */
-.slide9-row {
-    display: flex;
-    justify-content: space-between; /* Espacio entre elementos en la fila */
-    margin-top: 20px; /* Espacio superior */
+.slide-circle-image-9{
+    width: 100%;
 }
 
-/* Estilos para la columna */
-.slide9-column {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 20px;
-    padding: 30px;
-    /* align-content: space-around; */
-    justify-content: space-around;
-}
-
-/* Estilos para el contenedor de imagen y texto */
-.slide9-image-text-container {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-}
-
-/* Estilos para las imágenes en círculo */
-.slide9-circle-image {
-    width: 100px; /* Ancho de las imágenes en círculo */
-    height: 100px; /* Altura de las imágenes en círculo */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
-    margin-right: 10px; /* Espacio a la derecha de la imagen */
-}
-
-/* Estilos para las filas */
-.slide9-row {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente las columnas */
-    margin-top: 20px; /* Espacio superior */
-    padding: 20px;
-}
-
-/* Estilos para las columnas */
-.slide9-column {
-    flex: 1; /* Ocupa el espacio disponible */
-    margin: 0;
-}
-
-/* Estilos para la descripción */
-.slide9-description {
-    margin-top: 20px; /* Espacio superior */
-    text-align: left; /* Alineación del texto a la izquierda */
-}
-
-.slide9-text {
+.description-9 {
     text-align: justify;
+    font-size: 1.3rem;
 }
+
 
 /* Estilos para el Slide 10 */
 #slide10 {
     background-image: url('../img/fondo-slide-8.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px; /* Espacio interior */
-    text-align: center; /* Centra el contenido horizontalmente */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura igual al 100% de la ventana */
 }
 
 /* Estilos para el fondo rosa */
 .slide10-pink-background {
     background: rgb(239, 0, 111);
-    padding: 1.3px 23px 1px;
-    position: relative;
-    left: -20px;
-    text-align: left;
-    margin-top: 25px;
-    width: 100vh;
+    margin-left: -15%;
+    margin-top: 3%;
+    width: 89%;
+    padding: 3vh 0 2vh 24vh;
 }
 
-/* Estilos para el texto en fondo rosa */
-.slide10-white-text {
-    color: #fff; /* Color del texto blanco */
-    font-size: 30px; /* Tamaño del texto */
-}
+
 
 /* Estilos para el subtítulo */
-.slide10-subtitle {
-    margin: 20px 0; /* Espacio superior e inferior */
-    text-align: left; /* Alineación del texto a la izquierda */
+.subtitle-slide10{
+    margin: 20px 0;
+    width: 74%;
+    text-align: justify;
 }
 
-/* Estilos para las filas */
-.slide10-row {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se ajusten en filas */
-    justify-content: space-between; /* Espacio entre elementos en la fila */
-    margin-top: 20px; /* Espacio superior */
+.sub-description{
+    font-size: 1rem;
 }
 
-/* Estilos para las columnas */
-.slide10-column {
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: center; /* Centra el contenido horizontalmente */
-    margin: 10px; /* Espacio entre columnas */
+/* Estilos para el Slide 10 */
+#slide11 {
+    background-image: url('../img/fondo-slide-11.jpg'); /* Ruta de tu imagen de fondo */
 }
 
-/* Estilos para las imágenes en las columnas */
-.slide10-column-image {
-    width: 100%; /* Ancho de las imágenes al 100% de la columna */
-    height: 10px; /* Altura de las imágenes */
+.arrow-pink{
+    background: rgb(239, 0, 111);
+    border-radius: 0 49% 45% 0 / 0% 100% 110% 0;
+    height: 7vh;
+    padding: 6px;
 }
-
-/* Estilos para el texto en las columnas */
-.slide10-text {
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
-    text-align: center; /* Alineación del texto al centro */
-}
-
 
 
 /* Estilos para el Slide 12 */
 #slide12 {
     background-image: url('../img/fondo-slide-12.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px; /* Espacio interior */
-    text-align: center; /* Centra el contenido horizontalmente */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura igual al 100% de la ventana */
 }
 
-/* Estilos para el título */
-.slide12-title {
-    font-size: 36px; /* Tamaño del texto */
-    margin-bottom: 20px; /* Espacio inferior */
-}
-
-/* Estilos para las filas */
-.slide12-row {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se ajusten en filas */
-    justify-content: space-between; /* Espacio entre elementos en la fila */
-    margin-top: 20px; /* Espacio superior */
-}
-
-/* Estilos para el contenedor del elemento que contiene las 3 columnas */
-.elemento {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 25px;
-}
-
-/* Estilos para las columnas */
-.slide12-column {
-    flex-basis: calc(33.33% - 20px); /* Tamaño de columna con margen */
-    margin-right: 20px; /* Margen derecho entre columnas */
-    margin-bottom: 20px; /* Margen inferior entre filas */
-}
-
-/* Estilos para el contenedor de imagen y texto */
-.slide12-image-text-container {
-    display: flex;
-    flex-direction: row; /* Alinea los elementos en una fila */
-    align-items: center; /* Alinea verticalmente los elementos */
-    margin: 27px;
-}
-
-/* Estilos para las imágenes en círculo */
-.slide12-circle-image {
-    width: 120px; /* Ancho de las imágenes en círculo */
-    /*height: 100px; /* Altura de las imágenes en círculo */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
-    margin-right: 10px; /* Espacio a la derecha de la imagen */
-}
-
-/* Estilos para el texto en las filas */
-.slide12-text {
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
-    text-align: left; /* Alinea el texto a la izquierda */
-}
-
-/* Estilos para el texto en las filas */
-.slide12-text {
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
+.slide-circle-image-12{
+    width: 50%;
 }
 
 
 /* Estilos para el Slide 13 */
 #slide13 {
     background-image: url('../img/fondo-slide-9.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px; /* Espacio interior */
-    text-align: center; /* Centra el contenido horizontalmente */
-    min-height: 100vh; /* Altura igual al 100% de la ventana */
-}
-
-/* Estilos para el título */
-.slide13-title {
-    font-size: 24px; /* Tamaño del texto */
-    padding: 10px; /* Espacio interior */
-    margin-bottom: 10px; /* Espacio inferior */
-}
-
-/* Estilos para el título grande */
-.slide13-big-title {
-    font-size: 45px; /* Tamaño del texto grande */
-    margin-bottom: 20px; /* Espacio inferior */
-    margin-top: -1px;
-}
-
-/* Estilos para el texto en las filas */
-.slide13-text {
-    font-size: 14px; /* Tamaño del texto */
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
-    text-align: left; /* Alinea el texto a la izquierda */
-}
-
-/* Estilos para las filas de columnas */
-.slide13-row {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se ajusten en filas */
-    justify-content: space-between; /* Espacio entre elementos en la fila */
-    /*margin-top: 20px; /* Espacio superior */
-}
-
-/* Estilos para las columnas */
-.slide13-column {
-    flex-basis: calc(25% - 20px); /* Tamaño de columna con margen */
-    margin-right: 20px; /* Margen derecho entre columnas */
-    margin-bottom: 20px; /* Margen inferior entre filas */
 }
 
 /* Estilos para el contenedor de títulos con fondo rosado */
 .pink-bg-13 {
-    background: rgb(239, 0, 111); /* Fondo rosa */
-    color: #fff; /* Color del texto blanco */
-    padding: 10px; /* Espacio interior */
+    background: rgb(239, 0, 111);
+    padding: 2px;
 }
 
-.title-13{
-    font-size: 16px;
-    padding-top: 0px;
+.title-medium{
+    font-size: 2.2vh;
+    text-align: center;
     font-weight: bold;
-    text-align: justify;
-    margin: 0;
-}
-.sub-title-13{
-    text-align: justify;
-    font-size: 13px;
-    margin: 0;
-    padding-bottom: 0px;
 }
 
+.sub-title-medium{
+    font-size: 1.3vh;
+    text-align: center;
+}
 
+/* Estilos para el Slide 13 */
+#slide15 {
+    background-image: url('../img/fondo-slide-9.jpeg'); /* Ruta de tu imagen de fondo */
+}
+
+.blue-back-left{
+    background-color: rgb(59, 183, 230);
+    padding: 1.5vh 0 1.1vh 13vh;
+    margin: 2vh 15vh 3vh -13vh;
+}
+
+.blue-back-right{
+    background-color: rgb(59, 183, 230);
+    padding: 1.5vh 0 1.1vh 13vh;
+    margin: 14.8vh 17vh 3vh 0;
+}
 
 /* Estilos para el slide14 */
 #slide14 {
     background-image: url('../img/fondo-slide-3.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-
-
-
 
 /* Estilos para el slide16 */
 #slide16 {
     background-image: url('../img/fondo-slide-16.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-#slide16 .content-img-16 {
-    display: flex;
-    flex-direction: row; /* Alineación horizontal */
-    justify-content: center; /* Centro horizontal */
-    align-items: center; /* Centro vertical */
-}
-
-/* Estilos para el contenedor de las imágenes */
-.image-container-16 {
-    flex-basis: 45%; /* Ancho del 50% para dos imágenes en fila */
-    margin-right: 20px; /* Espacio entre las imágenes */
-    overflow: hidden; /* Oculta el contenido extra de las imágenes si es necesario */
-}
-
-/* Estilos para las imágenes */
-.image-container-16 img {
-    width: 520px; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionar */
-}
 
 
 /* Estilos para el slide17 */
 #slide17 {
     background-image: url('../img/fondo-slide-17.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#slide17 .content-img {
-    display: flex;
-    flex-direction: row; /* Cambia la dirección a horizontal */
-    justify-content: flex-start; /* Alinea las imágenes a la izquierda */
-    align-items: center;
-}
-
-/* Estilos para el contenedor de cada imagen */
-.image-container {
-    flex-basis: calc(25% - 20px); /* Ancho del 25% menos el espacio entre imágenes */
-    margin-right: 20px; /* Espacio entre las imágenes */
-    overflow: hidden; /* Oculta el contenido extra de las imágenes si es necesario */
-}
-
-/* Estilos para las imágenes */
-.image-container img {
-    width: 300px; /* Ancho fijo de 300px para las imágenes */
-    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
-    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionar */
 }
 
 
 /* Estilos para el 18 slide */
 #slide18 {
     background-image: url('../img/fondo-slide-18.jpeg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Estilos para slide generico*/
-.generic {
-    color: #fff; /* Color de texto */
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Contenido alineado en la parte superior */
-}
-
-/* Estilos para el texto y el botón */
-.generic .content {
-    text-align: center;
-    margin-top: 40vh;
 }
 
 .content-img {
@@ -966,4 +509,71 @@ span.text-5 {
 
 .orange-button:hover {
     background-color: darkorange; /* Cambia el color al pasar el mouse */
+}
+
+
+
+/* Estilos generales para móviles */
+/* ... */
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Modifica los estilos aquí para dispositivos móviles y tabletas */
+    .presentation-container {
+        padding: 20px;
+    }
+
+    .slide h1 {
+        font-size: 8vw;
+    }
+
+    .slide p {
+        font-size: 4vw;
+    }
+
+    .controls i {
+        font-size: 8vw;
+        margin-right: 10px;
+    }
+
+    .font-size-generic {
+        font-size: 8vw;
+        margin: 2vw;
+    }
+
+    .font-size-global {
+        font-size: 10vw;
+    }
+
+    h1.big {
+        font-size: 8vw;
+    }
+}
+
+
+/* Estilos generales para tabletas */
+/* ... */
+
+/* Media query para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Modifica los estilos aquí para tabletas */
+    .presentation-container {
+        padding: 40px;
+    }
+
+    /* Agrega más estilos específicos para tabletas aquí */
+}
+
+
+/* Estilos generales para computadoras */
+/* ... */
+
+/* Media query para computadoras */
+@media (min-width: 1025px) {
+    /* Modifica los estilos aquí para computadoras */
+    .presentation-container {
+        padding: 60px;
+    }
+
+    /* Agrega más estilos específicos para computadoras aquí */
 }
