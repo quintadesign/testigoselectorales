@@ -517,6 +517,11 @@ h1.big{
 .when-mark{
     margin-top: 4vh;
 }
+
+.check-content {
+    margin: 3vh auto 3vh;
+}
+
 /* Estilos generales para móviles */
 /* ... */
 
@@ -653,11 +658,15 @@ h1.big{
     .img-slide16{
         padding-bottom: 4vh
     }
+
+    .check-content {
+        margin: 2.5vh auto 2.5vh;
+    }
 }
 
 
 /* Estilos para tamaños grandes (de 993px a 1200px) */
-@media (min-width: 788px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1600px) {
     h1.medium-l,
     h1.medium-xl,
     h1.medium,
@@ -669,38 +678,46 @@ h1.big{
     .img-slide16{
         padding-bottom: 4vh
     }
-}
 
-/* Estilos para tamaños extra grandes (más de 1200px) */
-@media (min-width: 1201px) {
-    h1.medium-xl,
+    
+    /* .medium-m,
+    .medium-xs{
+        font-size: 3rem;
+    } */
+
+    h1.medium-m,
     h1.medium,
-    h1.big-xs,
-    h1.big-m,
-    h1.big {
-        font-size: 2.8rem;
+    h1.medium-xs,
+    .sub-title {
+        font-size: 1.5rem;
     }
-    .img-slide16{
-        padding-bottom: 4vh
+
+    h1.medium-xs{
+        font-size: 1rem;
+    }
+
+    .circle-image, .circle-image-7, .slide-circle-image, .slide-circle-image-9 {
+        display: none;
     }
 }
 
-/* Estilos para tamaños extra extra grandes (más de 1600px) */
-@media (min-width: 1601px) {
-    h1.medium,
-    h1.big-xs,
-    h1.big-m,
-    h1.big {
-        font-size: 3.5rem;
-    }
-}
-
-/* Estilos para tamaños extra grandes (de 993px a 1200px) */
+/* Estilos para tamaños extra grandes (de 1601px a 1200px) */
 @media (min-width: 1601px) and (max-width: 1920px) {
     h1.big-xs,
     h1.big-m,
     h1.big {
         font-size: 4rem;
+    }
+
+    h1.medium-m,
+    h1.medium,
+    h1.medium-xs,
+    .sub-title {
+        font-size: 1.7rem;
+    }
+
+    h1.medium-xs{
+        font-size: 1.2rem;
     }
 }
 
