@@ -96,7 +96,7 @@ h1.big-m{
 }
 
 h1.big{
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     font-weight: bold;
 }
 
@@ -192,10 +192,11 @@ h1.big{
 #slide4 .circle-image {
     text-align: end;
 }
+
 /* Estilos para hacer la imagen más pequeña */
 .circle-image img {
-    width: 130px; /* Cambia el ancho de la imagen a 100px o el valor que desees */
-    height: auto; /* Mantén la proporción de la imagen */
+    width: 131%;
+    height: auto;
 }
 
 /* Estilos para el título de la columna */
@@ -669,32 +670,44 @@ h1.big{
 @media (min-width: 768px) and (max-width: 1600px) {
     h1.medium-l,
     h1.medium-xl,
-    h1.medium,
     h1.big-xs,
     h1.big-m,
     h1.big {
         font-size: 3rem;
     }
+
     .img-slide16{
         padding-bottom: 4vh
     }
 
-    
-    /* .medium-m,
-    .medium-xs{
-        font-size: 3rem;
-    } */
-
     h1.medium-m,
-    h1.medium,
-    h1.medium-xs,
-    .sub-title {
+    h1.medium-xs {
         font-size: 1.5rem;
+    }
+
+    h1.medium{
+        font-size: 2rem;
     }
 
     h1.medium-xs{
         font-size: 1rem;
     }
 
+    .sub-title {
+        font-size: 1.2rem;
+    }
 
+    .circle-image img {
+        width: 120%;
+        height: auto;
+    }
+
+}
+
+/* Estilos para pantallas de 14 pulgadas o más grandes en orientación vertical */
+@media (min-width: 1601px) {
+    .circle-image img {
+        width: 100%;
+        height: auto;
+    }
 }
