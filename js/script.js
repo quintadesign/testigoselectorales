@@ -53,3 +53,16 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => { // Agregar evento para el botón "Atrás"
     goToPrevSlide();
 });
+
+// Agrega un evento de escucha de teclado al documento
+document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 37) {
+        // Tecla izquierda (código 37)
+        // Agrega aquí la lógica para retroceder
+        goToPrevSlide();
+    } else if (event.keyCode === 39) {
+        // Tecla derecha (código 39)
+        // Agrega aquí la lógica para avanzar
+        goToNextSlide();
+    }
+});
