@@ -301,8 +301,8 @@ h1.big{
 
 /* Estilos para las imágenes en círculo */
 .circle-image-7 {
-    width: 15vh;
-    margin: 2.8vh;
+    width: 142%;
+    margin: 3vh 0;
 }
 
 .description-7 {
@@ -696,36 +696,5 @@ h1.big{
         font-size: 1rem;
     }
 
-    .circle-image, .circle-image-7, .slide-circle-image, .slide-circle-image-9 {
-        display: none;
-    }
-}
 
-/* Estilos para tamaños extra grandes (de 1601px a 1200px) */
-@media (min-width: 1601px) and (max-width: 1920px) {
-    h1.big-xs,
-    h1.big-m,
-    h1.big {
-        font-size: 4rem;
-    }
-
-    h1.medium-m,
-    h1.medium,
-    h1.medium-xs,
-    .sub-title {
-        font-size: 1.7rem;
-    }
-
-    h1.medium-xs{
-        font-size: 1.2rem;
-    }
-}
-
-/* Estilos para tamaños extra extra extra grandes (más de 1920px) */
-@media (min-width: 1921px) {
-    h1.big-xs,
-    h1.big-m,
-    h1.big {
-        font-size: 5rem;
-    }
 }
