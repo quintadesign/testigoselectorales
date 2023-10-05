@@ -507,7 +507,6 @@ h1.big{
 
 .tarjeton-grafico {
     width: 100%;
-    height: 100%;
 }
 /* Estilos generales para móviles */
 /* ... */
@@ -626,6 +625,11 @@ h1.big{
 
     .blue-back-right {
         width: 90%;
+    }
+
+    .tarjeton-grafico {
+        width: 100%;
+        height: 100%;
     }
 }
 
