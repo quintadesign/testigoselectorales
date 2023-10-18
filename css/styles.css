@@ -14,7 +14,7 @@ body {
     text-align: center;
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
     z-index: 1; /* Asegura que los controles estén en la parte superior */
 }
@@ -482,6 +482,12 @@ h1.big{
 /* Estilos para el 18 slide */
 #slide18 {
     background-image: url('../img/fondo-slide-18.jpeg'); /* Ruta de tu imagen de fondo */
+}
+
+
+/* Estilos para el 18 slide */
+#slide19 {
+    background-image: url('../img/fondo-slide-11.jpg'); /* Ruta de tu imagen de fondo */
 }
 
 .content-img {
